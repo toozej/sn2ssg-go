@@ -2,4 +2,4 @@
 set -e
 rm -rf manpages
 mkdir manpages
-go run ./cmd/golang-starter/ man | gzip -c -9 >manpages/golang-starter.1.gz
+go run ./cmd/sn2ssg-go/ man | gzip -c -9 >manpages/sn2ssg-go.1.gz

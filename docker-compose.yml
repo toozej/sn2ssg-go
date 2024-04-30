@@ -1,9 +1,9 @@
 ---
 version: "3"
 services:
-  golang-starter:
-    container_name: golang-starter
-    image: toozej/golang-starter:latest
+  sn2ssg-go:
+    container_name: sn2ssg-go
+    image: toozej/sn2ssg-go:latest
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
@@ -12,11 +12,11 @@ services:
       - "traefik.enable=false"
       # labels below for publishing as web service
       # - "traefik.docker.network=traefik"
-      # - "traefik.http.routers.golang-starter.rule=Host(`golang-starter.test`)"
-      # - "traefik.http.routers.golang-starter.middlewares=http-redirect-https@file,headers@file"
-      # - "traefik.http.routers.golang-starter-secure.entrypoints=https"
-      # - "traefik.http.routers.golang-starter-secure.rule=Host(`golang-starter.test`)"
-      # - "traefik.http.routers.golang-starter-secure.middlewares=headers@file"
-      # - "traefik.http.routers.golang-starter-secure.tls=true"
+      # - "traefik.http.routers.sn2ssg-go.rule=Host(`sn2ssg-go.test`)"
+      # - "traefik.http.routers.sn2ssg-go.middlewares=http-redirect-https@file,headers@file"
+      # - "traefik.http.routers.sn2ssg-go-secure.entrypoints=https"
+      # - "traefik.http.routers.sn2ssg-go-secure.rule=Host(`sn2ssg-go.test`)"
+      # - "traefik.http.routers.sn2ssg-go-secure.middlewares=headers@file"
+      # - "traefik.http.routers.sn2ssg-go-secure.tls=true"
     # networks:
       # - traefik

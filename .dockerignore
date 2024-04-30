@@ -14,5 +14,5 @@ checkmake.ini
 Makefile
 Dockerfile*
 docker-compose.yml
-golang-starter
-golang-starter.key
+sn2ssg-go
+sn2ssg-go.key
